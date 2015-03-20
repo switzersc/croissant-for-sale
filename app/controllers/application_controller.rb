@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def current_subdomain
-    @current_subdomain = request.subdomains.last
+    sub = request.subdomains.last
+    @current_subdomain = Subdomain.where(name: sub).last
   end
   helper_method :current_subdomain
 end

@@ -15,7 +15,6 @@ subdomains = ["smelly", "twerky", "hurryupwithmydamn",
               "imastealyour","northwest", "kimkardashian",
               "craycray","illuminati", "fab", "naughty", "oreostuffed", "aggressive"]
 
-<<<<<<< Updated upstream
 Subdomain.create name: "smelly", image_url: "http://th04.deviantart.net/fs50/150/f/2009/323/e/6/e6803a2b0ad3b221a1b974c338f0f058.jpg"
 Subdomain.create name: "hurryupwithmydamn", image_url: "https://www.radioclash.com/wp-content/uploads/2013/06/493.png"
 Subdomain.create name: "stale", image_url: ""
@@ -39,10 +38,3 @@ Subdomain.create name: "fab", image_url: "http://rlv.zcache.com/le_croissant_wal
 Subdomain.create name: "naughty", image_url: "http://image.noelshack.com/fichiers/2013/45/1384001553-lecruasan.jpg"
 Subdomain.create name: "oreostuffed", image_url: "http://i.dailymail.co.uk/i/pix/2013/07/05/article-2356764-1AACA83D000005DC-383_634x429.jpg"
 Subdomain.create name: "aggressive", image_url: "http://www.cakeswithfaces.co.uk/wp-content/uploads/2013/08/Croissant3.jpg"
-
-
-
-subdomains.each do |subdomain|
-  Subdomain.create name: subdomain
-end
-
