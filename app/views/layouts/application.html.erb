@@ -16,5 +16,17 @@
 
     <%= yield %>
 
+
+    <script>
+    $( document ).ready(function() {
+      var valid = ["smelly", "twerky", "hurryupwithmydamn", "stale","crusty","buttery","sausage", "vegetariansausage","tofu","verynothealthy", "cold","warm","robot","connected","kanye", "imastealyour","northwest", "kanye"]
+      $("#search_croissant").on( "click", function() {
+          if($.inArray($('search_text').val(), valid))
+            alert("Valid")
+          else
+            alert("nope")
+        });
+    });
+    </script>
   </body>
 </html>
