@@ -11,7 +11,8 @@
 subdomains = ["smelly", "twerky", "hurryupwithmydamn",
               "stale","crusty","buttery","sausage",
               "vegetariansausage","tofu","verynothealthy",
-              "cold","warm","robot","connected"]
+              "cold","warm","robot","connected","kanye",
+              "imastealyour","northwest", "kanye"]
 
 subdomains.each do |subdomain|
   Subdomain.create name: subdomain
