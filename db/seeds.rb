@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# make sure to add these to your /etc/hosts file!
+# e.g. 0.0.0.0 smelly.croissant.forsale
+subdomains = ["smelly", "twerky", "hurryupwithmydamn",
+              "stale","crusty","buttery","sausage",
+              "vegetariansausage","tofu","verynothealthy",
+              "cold","warm","robot","connected"]
+
+subdomains.each do |subdomain|
+  Subdomain.create name: subdomain
+end
