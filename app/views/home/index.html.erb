@@ -32,6 +32,7 @@
 
  <div class="small-12 panel columns text-center">
    <%= image_tag("hurryupwithmydamn.png") %>
+   <%= image_tag(current_subdomain.try(:image_url)) %>
 
    <h4><%= current_subdomain %></h4>
    
@@ -41,10 +42,10 @@
         <div class="small-9 columns">
           <div class="row collapse postfix-round">
             <div class="small-9 columns">
-              <input type="text" placeholder="Value">
+              <input type="text" id="search_text" placeholder="What kind of croissant do you want?">
             </div>
             <div class="small-3 columns">
-              <a href="#" class="button postfix">Go</a>
+              <a href="#" id="search_croissant" class="button postfix">Go</a>
             </div>
           </div>
         </div>
@@ -56,22 +57,22 @@
 
 
 <footer class="row">
-<div class="large-12 columns"><hr/>
-   <div class="row">
+  <div class="large-12 columns"><hr/>
+     <div class="row">
 
-     <div class="large-6 columns">
-         <p>© Copyright no one at all. Go to town.</p>
+       <div class="large-6 columns">
+           <p>© Copyright no one at all. Go to town.</p>
+       </div>
+
+       <div class="large-6 columns">
+           <ul class="inline-list right">
+             <li><a href="kanye.croissant.forsale">Kanye</a></li>
+             <li><a href="northwest.croissant.forsale">NorthWest</a></li>
+             <li><a href="warm.croissant.forsale">Warm</a></li>
+             <li><a href="cold.croissant.forsale">Cold</a></li>
+           </ul>
+       </div>
+
      </div>
-
-     <div class="large-6 columns">
-         <ul class="inline-list right">
-           <li><a href="kanye.croissant.forsale">Kanye</a></li>
-           <li><a href="northwest.croissant.forsale">NorthWest</a></li>
-           <li><a href="warm.croissant.forsale">Warm</a></li>
-           <li><a href="cold.croissant.forsale">Cold</a></li>
-         </ul>
-     </div>
-
-   </div>
-</div>
+  </div>
 </footer>
