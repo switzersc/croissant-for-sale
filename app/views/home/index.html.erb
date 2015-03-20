@@ -5,7 +5,7 @@
    <li class="name">
      <h1>
        <a href="#">
-         <%= current_subdomain %>.croissant.forsale
+         <%= current_subdomain.try(:name) %>.croissant.forsale
        </a>
      </h1>
    </li>
@@ -34,7 +34,7 @@
    <%= image_tag("hurryupwithmydamn.png") %>
    <%= image_tag(current_subdomain.try(:image_url)) %>
 
-   <h4><%= current_subdomain %></h4>
+   <h4><%= current_subdomain.try(:name) %></h4>
    
    <form>
       <div class="row">
