@@ -13,7 +13,7 @@ subdomains = ["smelly", "twerky", "hurryupwithmydamn",
               "vegetariansausage","tofu","verynothealthy",
               "cold","warm","robot","connected","kanye",
               "imastealyour","northwest", "kimkardashian",
-              "craycray","illuminati", "fab", "naughty", "oreostuffed"]
+              "craycray","illuminati", "fab", "naughty", "oreostuffed", "aggressive"]
 
 Subdomain.create name: "smelly", image_url: ""
 Subdomain.create name: "twerky", image_url: ""
@@ -38,3 +38,4 @@ Subdomain.create name: "illuminati", image_url: ""
 Subdomain.create name: "fab", image_url: ""
 Subdomain.create name: "naughty", image_url: ""
 Subdomain.create name: "oreostuffed", image_url: ""
+Subdomain.create name: "aggressive", image_url: ""
